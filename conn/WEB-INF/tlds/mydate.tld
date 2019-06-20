@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+	"http://java.sun.com/j2ee/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib>
+
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>1.2</jsp-version>
+  <short-name>MyTag</short-name>
+  <uri>my</uri>
+
+
+<tag>
+<name>Connection</name>
+<tag-class>my.Conn_db</tag-class>
+<body-content>JSP</body-content>
+<attribute>
+<name>drivername</name>
+<required>False</required>
+<rtexprvalue>True</rtexprvalue>
+</attribute>
+<attribute>
+<name>driverURL</name>
+<required>False</required>
+<rtexprvalue>True</rtexprvalue>
+</attribute>
+</tag>
+
+<tag>
+<name>Database</name>
+<tag-class>my.Db</tag-class>
+<body-content>JSP</body-content>
+<attribute>
+<name>tablename</name>
+<required>False</required>
+<rtexprvalue>True</rtexprvalue>
+</attribute>
+</tag>
+
+</taglib>
